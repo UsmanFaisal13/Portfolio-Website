@@ -1,42 +1,166 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 0;
+  font-family: Poppins,Arial, Helvetica, sans-serif;
+ 
+
+ 
+}
+body{
+  background-color: #242424;
+  color: white;
+}
+header{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 2rem;
+}
+nav{
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1.2rem;
+  border-radius: 80px;
+  min-width: fit-content;
+background: rgba(255, 255, 255, 0.31);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.2px);
+-webkit-backdrop-filter: blur(6.2px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+position: fixed;
+}
+a{
+  transition: 0.5s;
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  transition: 0.5s;
+  color: rgb(98, 247, 202);
+}
+#contact{
+  display: flex;
+  flex-direction: column;
+  margin-left: 4vh;
+ 
+ 
+}
+#contact h1{
+  font-size: 3rem;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+}
+form button{
+  transition: 0.5s;
+  width: 100px;
+  height: 50px;
+  font-family: Poppins,Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+  border: none;
+  background-color: black;
+  color: white;
+  
+}
+form button:hover{
+  transition: 0.5s;
+  background-color: rgb(27, 27, 27);
+  color: white;
+  cursor: pointer;
+  
+}
+form textarea{
+  width: 500px;
+  height: 500px;
+  border-radius: 4px;
+  border: none;
+  font-family: Poppins,Arial, Helvetica, sans-serif;
+  padding: 1rem;
+}
+form input{
+  width: 500px;
+  height: 20px;
+  border-radius: 4px;
+  border: none;
+  font-family: Poppins,Arial, Helvetica, sans-serif;
+  padding: 1rem;
+}
+#hero {
+  background: url('your-hero-image.jpg') no-repeat center center/cover;
+  color: #fff;
+  margin: 12vh;
+  padding: 5rem 0;
+}
+/* Assuming this is your CSS file for the service section */
+
+/* Flexbox container for the service cards */
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjust as needed */
+  gap: 5px; /* Adjust the gap between cards */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Styling for each service card */
+.service-card {
+  background-color: #181818;
+
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Hover effect for cards */
+.service-card:hover {
+  transform: translateY(-5px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Text styles inside the card */
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
-.card {
-  padding: 2em;
+.service-card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
 }
+#services h1{
+  font-size: 3rem;
+  display: flex;
+  position: relative;
+  left: 12vh;
+  margin-bottom: 3rem;
+}
+#services{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  margin-top: 4vh;
+ 
+}
+section h1{
+  font-size: 3rem;
 
-.read-the-docs {
-  color: #888;
+}
+#hire{
+  transition: 0.5s;
+  width: 100px;
+  height: 50px;
+  font-family: Poppins,Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+  border: none;
+  background-color: rgb(144, 255, 149);
+  color: rgb(9, 73, 0);
+  margin-top: 4rem;
 }
