@@ -42,12 +42,10 @@ const Contact = () => {
   };
 
   return (
+ 
     <section id="contact">
       <h1>Contact</h1>
-      <p>
-        If you have any questions or would like to work together, feel free to
-        reach out!
-      </p>
+      
       <form onSubmit={handleSubmit}>
         <label>
         <h4>Name</h4>
@@ -79,7 +77,11 @@ const Contact = () => {
         </label>
         <button type="submit">Send</button>
       </form>
+      
     </section>
+
+   
+   
   );
 };
 

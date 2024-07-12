@@ -6,20 +6,33 @@
 
  
 }
+.logo{
+  height: 4rem;
+  border-radius: 100%;
+}
 body{
-  background-color: #242424;
-  color: white;
+  background-color: #ffffff;
+  color: black;
 }
 header{
  display: flex;
- justify-content: center;
+ flex-direction: row;
  align-items: center;
- margin: 2rem;
+ justify-content: space-around;
+ position: sticky;
+top: 0; 
+z-index: 1000; 
+margin-top: 2rem;
+
+ 
+ 
+
 }
 nav{
+
   display: flex;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-right: 4rem;
   padding: 1.2rem;
   border-radius: 80px;
   min-width: fit-content;
@@ -28,26 +41,26 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(6.2px);
 -webkit-backdrop-filter: blur(6.2px);
 border: 1px solid rgba(255, 255, 255, 0.3);
-position: fixed;
 }
 a{
   transition: 0.5s;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 a:hover{
   transition: 0.5s;
-  color: rgb(98, 247, 202);
+  color: #b6b6b6;
 }
 #contact{
   display: flex;
   flex-direction: column;
-  margin-left: 4vh;
+  margin-left: 12vh;
  
  
 }
 #contact h1{
   font-size: 3rem;
+ 
 }
 form{
   display: flex;
@@ -68,32 +81,35 @@ form button{
 }
 form button:hover{
   transition: 0.5s;
-  background-color: rgb(27, 27, 27);
-  color: white;
+  background-color: rgb(145, 145, 145);
+  color: rgb(255, 255, 255);
   cursor: pointer;
   
 }
 form textarea{
-  width: 500px;
-  height: 500px;
+  min-width: 24rem;
+  height: 28rem;
   border-radius: 4px;
   border: none;
   font-family: Poppins,Arial, Helvetica, sans-serif;
   padding: 1rem;
+  background-color: rgb(248, 247, 247);
 }
 form input{
-  width: 500px;
-  height: 20px;
+  min-width: 24rem;
+  height: 40px;
   border-radius: 4px;
   border: none;
   font-family: Poppins,Arial, Helvetica, sans-serif;
   padding: 1rem;
+  background-color: rgb(248, 247, 247);
 }
 #hero {
-  background: url('your-hero-image.jpg') no-repeat center center/cover;
+ 
   color: #fff;
   margin: 12vh;
-  padding: 5rem 0;
+ 
+  color: black;
 }
 /* Assuming this is your CSS file for the service section */
 
@@ -107,12 +123,12 @@ form input{
 
 /* Styling for each service card */
 .service-card {
-  background-color: #181818;
+  background-color: rgb(248, 247, 247);
 
   border-radius: 8px;
   padding: 20px;
   width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
   transition: transform 0.3s ease;
 }
 
@@ -153,14 +169,75 @@ section h1{
   font-size: 3rem;
 
 }
-#hire{
-  transition: 0.5s;
-  width: 100px;
-  height: 50px;
-  font-family: Poppins,Arial, Helvetica, sans-serif;
-  border-radius: 4px;
+
+#hero button {
+  display: flex;
+  padding: 1.1rem 2.5rem 1.1rem 3.5rem;
+  border-radius: 99rem;
+  background-color: #a2f591;
+  transition: all 0.5s ease;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
   border: none;
-  background-color: rgb(144, 255, 149);
-  color: rgb(9, 73, 0);
-  margin-top: 4rem;
+  width: 16rem;
+  font-family: Poppins,Arial, Helvetica, sans-serif;
+
+  font-size: 18px;
 }
+
+#hero button .icon {
+  height: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero button .icon span {
+  background: black;
+  border-radius: 100%;
+  padding: 0rem;
+
+  width: 0rem;
+  height: 0rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: rotate(-180deg);
+
+  transition: all 0.5s ease;
+}
+
+#hero button:hover .icon span {
+  transform: rotate(0deg);
+
+  border-radius: 100%;
+  padding: 0.6rem;
+  width: 0.9rem;
+  height: 0.9rem;
+}
+#projects{
+  display: flex;
+  
+  margin-left: 12vh;
+}
+#testimonials{
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#testimonials h1{
+  display: flex;
+  margin-left: 12vh;
+ 
+}
+footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 8vh;
+}
+
+
