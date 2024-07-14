@@ -44,7 +44,8 @@ const Contact = () => {
   return (
  
     <section id="contact">
-      <h1>Contact</h1>
+      <div id="contactForm">
+      <h1>Let's Talk!</h1>
       
       <form onSubmit={handleSubmit}>
         <label>
@@ -77,6 +78,23 @@ const Contact = () => {
         </label>
         <button type="submit">Send</button>
       </form>
+      </div>
+      <div id="How">
+        <h1>How it works?</h1>
+        <p>
+          You can click the "Hire me" or "Visit upwork" button, <br />
+          and it'll take you to my upwork profile.
+          
+          <br />
+          <button id="CTA">Visit Upwork</button>
+          <br /> <h2>OR</h2><br />
+        </p>
+        <p className="sub">Fill this form to contact me!</p>
+        <img src="src\assets\curved-arrow-4630.png"/>
+      
+        
+
+      </div>
       
     </section>
 
