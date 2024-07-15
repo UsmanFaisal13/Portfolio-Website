@@ -136,6 +136,7 @@ form input{
 #herotext {
   margin-left: 12vh;
   margin-top: 4vh;
+  max-width: 500px;
  
 }
 /* Assuming this is your CSS file for the service section */
@@ -338,7 +339,7 @@ footer{
 }
 #Animation{
  
-  margin-left: 10vh;
+  margin-left: 32vh;
   position: relative;
   bottom: 80px;
   
