@@ -6,10 +6,10 @@ const Hero = () => {
   return (
     <section id="hero">
       <div id="herotext">
-      <h1>React Developer</h1>
+      <h1>Get your own React Website</h1>
       <p className="subheading">
         I’m <b>Usman</b>, a web designer and developer passionate about creating
-        beautiful and functional websites.
+        simple and functional websites.
       </p>
       <button>
   Hire me

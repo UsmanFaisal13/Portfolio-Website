@@ -1,16 +1,21 @@
-*{}
-#root {
-  
+
+* {
   margin: 0;
   padding: 0;
+
+
+}
+
+#root {
+  
+ 
   font-family: Poppins,Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 
 
  
 }
-body{
-  overflow-x: hidden;
-}
+
 .logo{
   height: 4rem;
   border-radius: 100%;
@@ -57,6 +62,7 @@ a:hover{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
 }
 #How{
 
@@ -81,6 +87,7 @@ a:hover{
  
 }
 #contact h1{
+
   font-size: 3rem;
  
 }
@@ -127,11 +134,9 @@ form input{
   background-color: rgb(248, 247, 247);
 }
 #herotext {
- 
-  color: #fff;
   margin-left: 12vh;
+  margin-top: 4vh;
  
-  color: black;
 }
 /* Assuming this is your CSS file for the service section */
 
@@ -150,6 +155,7 @@ form input{
   border-radius: 8px;
   padding: 20px;
   max-width: 300px;
+  height: 200px;
  
   transition: transform 0.3s ease;
 }
@@ -160,9 +166,11 @@ form input{
 }
 
 /* Text styles inside the card */
-.service-card h3 {
+.service-card h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  margin-top: 20px;
+  
 }
 
 .service-card p {
@@ -186,11 +194,15 @@ section{
   flex-direction: column;
   margin-top: 12vh;
  
+ 
 }
 section h1{
   font-size: 3rem;
+  margin-bottom: 4rem;
+  
 
 }
+
 
 #hero button {
   display: flex;
@@ -206,6 +218,8 @@ section h1{
   font-family: Poppins,Arial, Helvetica, sans-serif;
 
   font-size: 18px;
+
+ 
 }
 
 #hero button .icon {
@@ -262,6 +276,8 @@ footer{
   margin-top: 8vh;
   background-color: black;
   color: #ffffff;
+  padding: 2rem;
+  
  
   
 }
@@ -310,9 +326,9 @@ footer{
   line-height: 1.5;
 }
 .subheading{
-  padding-top: 0;
-  margin-top: 0;
+  
   max-width: 500px;
+  margin-bottom: 2rem;
 }
 #hero{
   display: flex;
@@ -322,7 +338,7 @@ footer{
 }
 #Animation{
  
-  margin-left: 40vh;
+  margin-left: 10vh;
   position: relative;
   bottom: 80px;
   
@@ -332,4 +348,201 @@ footer{
   width: 100px;
  
 }
+@media (max-width: 1024px) {
+  nav {
+    margin-left: 4rem;
+  }
+  
+  #How {
+    margin: 0 4vw;
+  }
 
+  #herotext {
+    margin-left: 6vh;
+  }
+
+  #Animation {
+    margin-left: 20vh;
+  }
+
+  .service-card {
+    max-width: 200px;
+  }
+
+  #services h1, #testimonials h1 {
+    left: 6vh;
+  }
+
+  #projects {
+    margin-left: 6vh;
+  }
+}
+
+@media (max-width: 768px) {
+  #contact{
+    display: grid;
+    grid-template-columns: 2;
+    align-items: center;
+    justify-content: center;
+  }
+  #How img{
+    display: none;
+  }
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  nav.active {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 1rem;
+  }
+  
+  .hamburger {
+    display: flex;
+  }
+
+  #How {
+  margin-left: 4rem;
+  padding: 4rem;
+  }
+
+  #herotext {
+    margin: 2vh 4vh;
+  }
+
+  #Animation {
+    margin-left: 10vh;
+    bottom: 40px;
+    position: relative;
+    right: 40px;
+  }
+
+  .service-card {
+    max-width: 150px;
+  }
+
+  #services h1, #testimonials h1 {
+    left: 3vh;
+  }
+
+  #projects {
+    margin-left: 3vh;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .service-container{
+    display: grid;
+    grid-template-columns: 3;
+
+  }
+  #contact{
+    margin-right: 6rem;
+  }
+ 
+  form textarea{
+    min-width: 20rem;
+    height: 14rem;
+    border-radius: 4px;
+    border: none;
+    font-family: Poppins,Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    background-color: rgb(248, 247, 247);
+  }
+  form input{
+    min-width: 20rem;
+    height: 14px;
+    border-radius: 4px;
+    border: none;
+    font-family: Poppins,Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    background-color: rgb(248, 247, 247);
+  }
+ 
+
+
+  #herotext {
+    margin: 1vh 2vh;
+  }
+
+  #Animation {
+    margin-left: 5vh;
+    bottom: 20px;
+  }
+
+  .service-card {
+    max-width: 500px;
+  }
+  .service-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 3;
+    gap:2rem;
+  }
+
+  #services h1 {
+    left: 3rem;
+  }
+
+  #projects {
+    margin-left: 1.5vh;
+  }
+  #Animation {
+    display: none;
+  
+  
+  }
+  #testimonials{
+    display: grid;
+    justify-content: center;
+   
+
+  }
+  #testimonials h1{
+    margin-right: 5rem;
+  }
+    nav {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    nav.active {
+      display: flex;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      padding: 1rem;
+    }
+    
+    .hamburger {
+      display: flex;
+    }
+    
+  }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: black;
+  margin-bottom: 4px;
+  border-radius: 5px;
+}
+#services{
+  margin-top: 4rem;
+}

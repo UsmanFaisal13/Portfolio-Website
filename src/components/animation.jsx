@@ -18,7 +18,7 @@ export const ReactAnimation = ()=>{
       }, []); // Empty dependency array ensures useEffect runs only once
     
       return (
-        <div id="lottie-container" style={{ width: '500px', height: '500px' }}>
+        <div id="lottie-container" style={{ width: '550px', height: '550px' }}>
           {/* Placeholder for Lottie animation */}
         </div>
       );

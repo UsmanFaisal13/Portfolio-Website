@@ -89,7 +89,7 @@ const Contact = () => {
           <button id="CTA">Visit Upwork</button>
           <br /> <h2>OR</h2><br />
         </p>
-        <p className="sub">Fill this form to contact me!</p>
+        <p className="sub">Fill the form to contact me!</p>
         <img src="src\assets\curved-arrow-4630.png"/>
       
         
