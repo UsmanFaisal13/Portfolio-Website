@@ -1,10 +1,5 @@
 import React, { useState } from "react";
 
-
-  
-
- 
-
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
@@ -14,7 +9,7 @@ const Header = () => {
     
    
     <header>
-      <img src="./public/A simple U logo design.svg" alt="" className="logo" />
+      <img src="src/assets/A simple U logo design.svg" alt="" className="logo" />
       <nav  className={`nav-links ${isOpen ? 'active' : ''}`}>
         <a href="#services">Services</a>
         <a href="#projects">Projects</a>

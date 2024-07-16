@@ -7,8 +7,7 @@ const Services = () => {
     <div className="service-container">
       <div className="service-card">
         <h2>Web Development</h2>
-        <p>Transform your ideas into reality with our custom web development services. 
-          We build responsive,
+        <p>Transform your ideas into reality with responsive,
            user-friendly websites that are optimized for performance and tailored to meet your business needs.</p>
       </div>
       <div className="service-card">
