@@ -102,8 +102,8 @@
   },
   "scripts": {
   "test": "echo \"Error: no test specified\" && exit 1",
-  "build": "tailwindcss -i ./src/index.css -o ./dist/index.css",
-  "start": "npm run build && http-server ./dist"
+  "build": "tailwindcss -i ./src/index.css -o ./src/index.css --watch",
+  "start": "npm run build && http-server ./src"
 },
   "keywords": [],
   "author": "",
