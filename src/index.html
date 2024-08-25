@@ -4,10 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
-  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("_n51Fox9eTJ81twgz");
+    })();
+  </script>
+  
 </head>
 <body class="font-mono flex flex-col gap-8 bg-gray-900 overflow-x-hidden scroll-smooth w-full p-0 m-0 ">
+   <script type="text/javascript">
+      window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          emailjs.sendForm('service_q9rsmji', 'template_s6lt1o5', this)
+            .then(function() {
+              alert('Email sent successfully!');
+            }, function(error) {
+              alert('Failed to send email. Please try again.');
+              console.log('FAILED...', error);
+            });
+        });
+      }
+    </script>
+    
+   
 <!-- ====== Navbar Section Start -->
+ 
 
 <!-- ====== Navbar Section End -->
 <div class="bg-gray-900 py-20 overflow-x-hidden">
@@ -25,11 +48,10 @@
                     📍 Karachi, Pakistan
                 </p>
                 <div class="flex gap-2">
-                    <a href="#" class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-6 rounded-md">Get
-                        Started
+                    <a href="#" class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-6 rounded-md">
+                        Visit Upwork
                     </a>
-                    <a href="#" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-md">Learn
-                        More
+                    <a href="#" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-md">Contact
                     </a>
                 </div>
                 <p class="text-lg md:text-xl lg:text-2xl mt-8 text-white font-mono">
@@ -76,8 +98,8 @@
          </p>
         
          <div class="flex gap-2">
-           <a href="#" class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-6 rounded-md">Get in Touch</a>
-           <a href="#" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-md">Learn More</a>
+           <a href="#" class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-6 rounded-md">Upwork</a>
+          
          </div>
        </div>
      
@@ -101,6 +123,7 @@
        </div>
      </div>
      <div class="flex flex-col gap-4 sm:flex-col md:flex-col lg:flex-row lg:gap-4">
+      <p class="bg-indigo-500 text-white rounded ">currently no client project's available</p>
       
          </div>
        </div>
@@ -194,20 +217,20 @@ class="relative z-10 overflow-hidden  dark:bg-dark py-20 lg:py-[120px] overflow-
          <div
             class="relative p-8  rounded-lg shadow-lg dark:bg-dark-2 sm:p-12"
             >
-            <form>
+            <form id="contact-form">
                <div class="mb-6">
                   <input
                      type="text"
                      placeholder="Your Name"
                      class=" font-sans border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
-                     />
+                     required/>
                </div>
                <div class="mb-6">
                   <input
                      type="email"
                      placeholder="Your Email"
                      class="font-sans border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none"
-                     />
+                     required/>
                </div>
         
                <div class="mb-6">
@@ -215,7 +238,7 @@ class="relative z-10 overflow-hidden  dark:bg-dark py-20 lg:py-[120px] overflow-
                      rows="6"
                      placeholder="Your Message"
                      class="font-sans border-stroke dark:border-dark-3 dark:text-dark-6 dark:bg-dark text-body-color focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none"
-                     ></textarea>
+                      required></textarea>
                </div>
                <div>
                   <button
