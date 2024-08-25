@@ -6,90 +6,11 @@
   <link href="./output.css" rel="stylesheet">
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body class="font-mono flex flex-col gap-8 bg-gray-900 overflow-x-hidden w-full scroll-smooth">
+<body class="font-mono flex flex-col gap-8 bg-gray-900 overflow-x-hidden scroll-smooth w-full p-0 m-0 ">
 <!-- ====== Navbar Section Start -->
-<header
 
-   x-data="
-   {
-   navbarOpen: false
-   }
-   "
-   class=" overflow-x-hidden flex items-center w-full  dark:bg-dark bg-gray-900" 
-   >
-   <div class="container mx-auto">
-      <div class="relative flex items-center justify-between -mx-4">
-         <div class="max-w-full px-4 w-60">
-            <a href="javascript:void(0)" class="block w-full py-5">
-          <h1 class=" font-bold text-white text-2xl font-mono w-screen ml-4">Usman Faisal</h1>
-            </a>
-         </div>
-         <div class="flex items-center justify-between w-full px-4">
-            <div>
-               <button
-                  @click="navbarOpen = !navbarOpen"
-                  :class="navbarOpen && 'navbarTogglerActive' "
-                  id="navbarToggler"
-                  class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
-                  >
-               <span
-                  class="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white"
-                  ></span>
-               <span
-                  class="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white"
-                  ></span>
-               <span
-                  class="relative my-[6px] block h-[2px] w-[30px] bg-body-color dark:bg-white"
-                  ></span>
-               </button>
-               <nav
-                  :class="!navbarOpen && 'hidden' "
-                  id="navbarCollapse"
-                  class="absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-white py-5 px-6 shadow lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none dark:bg-dark-2 lg:dark:bg-transparent"
-                  >
-                  <ul class="block lg:flex">
-                     <li>
-                        <a
-                           href="javascript:void(0)"
-                           class="flex py-2 text-base font-medium text-body-color hover:text-dark lg:ml-12 lg:inline-flex dark:text-dark-6 dark:hover:text-white"
-                           >
-                        Home
-                        </a>
-                     </li>
-                     <li>
-                        <a
-                           href="javascript:void(0)"
-                           class="flex py-2 text-base font-medium text-body-color hover:text-dark lg:ml-12 lg:inline-flex dark:text-dark-6 dark:hover:text-white"
-                           >
-                        Contact
-                        </a>
-                     </li>
-                     <li>
-                        <a
-                           href="javascript:void(0)"
-                           class="flex py-2 text-base font-medium text-body-color hover:text-dark lg:ml-12 lg:inline-flex dark:text-dark-6 dark:hover:text-white"
-                           >
-                        Projects
-                        </a>
-                     </li>
-                  </ul>
-               </nav>
-            </div>
-            <div class="justify-end hidden pr-16 sm:flex lg:pr-0">
-             
-               <a
-                  href="javascript:void(0)"
-                  class="py-3 text-base font-medium text-white rounded-md bg-primary px-7 hover:bg-primary/90"
-                  >
-               Sign Up
-               </a>
-            </div>
-         </div>
-      </div>
-   </div>
-</header>
 <!-- ====== Navbar Section End -->
-<div class="bg-gray-900 py-20">
+<div class="bg-gray-900 py-20 overflow-x-hidden">
     <div class="container mx-auto px-6 md:px-12">
         <div class="flex flex-col md:flex-row items-center">
          
@@ -134,7 +55,7 @@
                                               </div>
             </div>
         
-            <div class="md:w-1/2 lg:w-1/3 mt-8 md:mt-0 lg:block hidden">
+            <div class="md:w-1/2 lg:w-1/3 mt-8 md:mt-0 lg:block hidden md:hidden">
               <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/213dfce4-25ef-40ed-b8ba-144da957ca99/rBlBna6zSG.json" background="##fff" speed="1" style="width: 500px; height: 500px" loop autoplay  mode="normal"></lottie-player>
             </div>
         </div>
@@ -143,7 +64,7 @@
 <!-- Hero section ends -->
 
  <!-- About Section Start -->
-<section class="bg-gray-900 py-20">
+<section class="bg-gray-900 py-20 overflow-x-hidden">
    <div class="container mx-auto px-6 md:px-12">
      
      <div class="flex flex-col md:flex-row items-center gap-6">
@@ -169,7 +90,7 @@
    
 
   <!-- Client Projects Section Start -->
-<section class="bg-gray-900 py-20">
+<section class="bg-gray-900 py-20 overflow-x-hidden">
    <div class="container mx-auto px-6 md:px-12">
      <div class="flex flex-col md:flex-row items-center gap-6">
        <div class="md:w-1/2 lg:w-2/3">
@@ -180,46 +101,7 @@
        </div>
      </div>
      <div class="flex flex-col gap-4 sm:flex-col md:flex-col lg:flex-row lg:gap-4">
-      <div class="card bg-base-100 image-full w-96 shadow-xl font-sans">
-         <figure>
-           <img
-             src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-             alt="Shoes" />
-         </figure>
-         <div class="card-body">
-           <h2 class="card-title text-white">Shoes!</h2>
-           <p>If a dog chews shoes whose shoes does he choose?</p>
-           <div class="card-actions justify-end">
-             <button class="btn btn-primary text-white">Visit Site</button>
-           </div>
-         </div>
-       </div>
-       <div class="card bg-base-100 image-full w-96 shadow-xl font-sans">
-         <figure>
-           <img
-             src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-             alt="Shoes" />
-         </figure>
-         <div class="card-body">
-           <h2 class="card-title text-white">Shoes!</h2>
-           <p>If a dog chews shoes whose shoes does he choose?</p>
-           <div class="card-actions justify-end">
-             <button class="btn btn-primary text-white">Visit Site</button>
-           </div>
-         </div>
-       </div>
-       <div class="card bg-base-100 image-full w-96 shadow-xl font-sans">
-         <figure>
-           <img
-             src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-             alt="Shoes" />
-         </figure>
-         <div class="card-body">
-           <h2 class="card-title text-white">Shoes!</h2>
-           <p>If a dog chews shoes whose shoes does he choose?</p>
-           <div class="card-actions justify-end">
-             <button class="btn btn-primary text-white">Visit Site</button>
-           </div>
+      
          </div>
        </div>
      </div>
@@ -230,7 +112,7 @@
  <!-- Client Projects Section End -->
   <!-- ====== Contact Section Start -->
 <section
-class="relative z-10 overflow-hidden  dark:bg-dark py-20 lg:py-[120px]"
+class="relative z-10 overflow-hidden  dark:bg-dark py-20 lg:py-[120px] overflow-x-hidden"
 >
 <div class="container mx-auto">
    <div class="flex flex-wrap -mx-4 lg:justify-between">
@@ -1158,7 +1040,7 @@ class="relative z-10 overflow-hidden  dark:bg-dark py-20 lg:py-[120px]"
 </div>
 </section>
 <!-- ====== Contact Section End -->
-<footer class="footer footer-center text-base-content p-4">
+<footer class="footer footer-center text-base-content p-4 overflow-x-hidden">
   <aside>
     <p>Copyright © 2024 - All right reserved by Usman Faisal</p>
   </aside>
